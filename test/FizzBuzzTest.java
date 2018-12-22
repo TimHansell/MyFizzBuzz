@@ -1,7 +1,5 @@
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -34,5 +32,11 @@ public class FizzBuzzTest {
     public void whenFizzBuzzIsPassedAMultipleOfFiveItReturnsBuzz() {
         assertEquals("buzz", fizzBuzz.fizz(5));
         assertEquals("buzz", fizzBuzz.fizz(10));
+    }
+
+    @Test
+    public void whenFizzBuzzIsPassedAMultipleOfFifteenItReturnsFizzBuzz() {
+        assertEquals("fizzbuzz", fizzBuzz.fizz(15));
+        assertEquals("fizzbuzz", fizzBuzz.fizz(30));
     }
 }
