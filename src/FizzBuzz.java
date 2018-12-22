@@ -1,6 +1,10 @@
 
 public class FizzBuzz {
     public String fizz(Integer inputNumber) {
-        return(inputNumber.toString());
+        if (inputNumber % 3 == 0) {
+            return( "fizz");
+        } else {
+            return (inputNumber.toString());
+        }
     }
 }
